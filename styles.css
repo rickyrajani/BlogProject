@@ -1,0 +1,162 @@
+html { 
+  background: url("img/budapest_hotel.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  -webkit-font-smoothing: antialiased !important;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  font-smooth: always;
+  text-rendering: optimizeLegibility;
+
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  /*background: #cdedff;*/
+}
+
+.sub-content {
+  display: none;
+  margin: 50px auto 100px auto;
+  width: 100%;
+  max-width: 640px;
+  text-align: center;
+  display: none;
+  padding: 10px;
+  padding-bottom: 30px;
+  background-color: rgba(45, 43, 43, 0.42);
+}
+
+#login {
+  margin: 50px auto 100px auto;
+  width: 100%;
+  max-width: 640px;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 30px;
+  background-color: rgba(45, 43, 43, 0.42);
+}
+ 
+/*Navigation Bar*/
+.nav {
+    background-color: rgba(255, 255, 255, 0.57);
+}
+.nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  transition: .5s background-color;
+}
+ 
+.buttons a:hover {
+  background-color: #9cb0ba;
+}
+ 
+.buttons a.active {
+  background-color: #9cb0ba;
+  cursor: default;
+}
+
+/*#logo {
+  float: left;
+  height: 50px;
+  width: 100px;
+  display: none;
+}*/
+
+#logo {
+  float: left;
+  display: none;
+  font-size: 1.8em;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+#circle {
+  width: 150px;
+  height: 150px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 100px;
+  background: rgba(247, 202, 202, 0.65);
+  display: inline-block;
+  margin: 20px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+#circle:hover {
+  transform: scale(1.1);
+  background: rgba(247, 202, 202, 1);
+}
+
+.blogpost {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 140px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.7em;
+}
+
+input[type=text], textarea {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+input[type=text]:focus, textarea:focus {
+    border-color:#333;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+  .nav li {
+    float: right;
+  }
+  .nav ul {
+    overflow: auto;
+    margin: 0 auto;
+  }
+  #logo {
+    display: inline-block;
+  }
+}

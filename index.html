@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	    <title>Whimsical Little Blog</title>
+
+	    <meta name="description" content="Ricky Rajani's blog for Fundamentals of Web Techniques" />
+	    <meta name="keywords" content="ricky rajani, blog" />
+	    <meta name="author" content="Ricky Rajani" />
+	    <meta http-equiv="Cache-Control" content="public, max-age=2592000">
+	    <meta http-equiv="Expires" content="2592000" />
+	    <link rel="shortcut icon" href="img/favicon.ico">
+	    <link rel="stylesheet" type="text/css" href="styles.css" title="Main Styles">
+	</head>
+
+	<body>
+		<header>
+			<div class="nav">
+			<!-- <img src="img/Moonrise-Kingdom.jpg" id="logo"/> -->
+				<div id="logo">
+					<a href="#home">Ricky Rajani</a>
+				</div>
+				<ul class="buttons">
+					<!-- <li onclick="showContent('#write');"><a href="#write">Write</a></li> -->
+					<li onclick="showPage('login');"><a href="#login">Write</a></li>
+			        <li onclick="showContent('#blog');"><a href="#blog">Blog</a></li>
+			        <li onclick="showContent('#about');"><a href="#about">About</a></li>
+			    </ul>
+		    </div>
+		</header>
+			<div class="sub-content" id="about">
+				<h2>Hi! I'm Ricky</h2>
+				<p>It's always your favorite sins that do you in.</p>
+			</div>
+			<div class="sub-content" id="blog">
+				<h2>This is my blog</h2>
+				<div id="circle" onclick="showBlog('blog3');">
+					<a href="#blogpost" class="blogpost">2/10</a>
+				</div>
+				<div id="circle" onclick="showBlog('blog2');">
+					<a href="#blogpost" class="blogpost">2/03</a>
+				</div>
+				<div id="circle" onclick="showBlog('blog1');">
+					<a href="#blogpost" class="blogpost">1/27</a>
+				</div>
+			</div>
+	</body>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</html>

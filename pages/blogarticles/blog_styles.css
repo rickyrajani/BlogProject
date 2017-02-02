@@ -1,0 +1,28 @@
+body {
+	background: rgba(247, 202, 202, 1);
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+.post {
+	text-align: center;
+	background: rgba(255, 255, 255, 0.58);
+    width: 600px;
+    margin: auto;
+    height: 100%;
+    padding: 10px;
+}
+
+footer {
+	text-align: center;
+}
+
+.pointer {
+	display: inline-block;
+	margin: 10px;
+}
+
+.pointer a {
+	text-decoration: none;
+	color: black;
+	margin: 20px;
+}
